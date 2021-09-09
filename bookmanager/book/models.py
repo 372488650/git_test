@@ -7,6 +7,9 @@ class BookInfo(models.Model):
     # Id
     name = models.CharField(max_length=10)
 
+    def __str__(self):
+        return self.name
+
 
 class PeopleInfo(models.Model):
     name = models.CharField(max_length=10)
